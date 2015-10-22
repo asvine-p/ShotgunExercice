@@ -30,10 +30,10 @@ public class SwipeFragment extends Fragment {
         rootview    =   inflater.inflate(R.layout.fragment_swipe, container, false);
         CardContainer mCardContainer = (CardContainer) rootview.findViewById(R.id.layoutview);
         SimpleCardStackAdapter adapter = new SimpleCardStackAdapter(getActivity());
-        adapter.add(new CardModel("", "", getActivity().getDrawable(R.drawable.lelouvre)));
-        adapter.add(new CardModel("", "", getActivity().getDrawable(R.drawable.moscou2)));
-        adapter.add(new CardModel("", "", getActivity().getDrawable(R.drawable.paris)));
-        adapter.add(new CardModel("", "", getActivity().getDrawable(R.drawable.toureiffel)));
+        adapter.add(new CardModel("", "", getActivity().getDrawable(R.drawable.louvre)));
+        adapter.add(new CardModel("", "", getActivity().getDrawable(R.drawable.moscou)));
+        adapter.add(new CardModel("", "", getActivity().getDrawable(R.drawable.france)));
+        adapter.add(new CardModel("", "", getActivity().getDrawable(R.drawable.gw_china)));
 
         mCardContainer.setAdapter(adapter);
         // Inflate the layout for this fragment
